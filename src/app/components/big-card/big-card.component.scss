@@ -1,0 +1,43 @@
+.big-card {
+  &__container {
+    text-decoration: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+
+    max-width: 420px;
+    gap: 10px;
+  }
+
+  &__image {
+    max-width:100%;
+    height: auto;
+  }
+
+  &__date {
+    margin-top:6px ;
+    color: #4f4d4d;
+  }
+
+  &__title {
+    font-size: 32px ;
+  }
+
+  &__description {
+    font-weight: 400;
+    font-size: 16px;
+    color: gray;
+  }
+
+
+  &__container:hover &__title{
+    text-decoration: underline;
+  }
+
+
+  &__container:visited &__title {
+    color: #f88145;
+  }
+}
