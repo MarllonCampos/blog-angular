@@ -12,17 +12,18 @@
   }
 
   &__image {
-    max-width:100%;
+    max-width: 100%;
     height: auto;
+    border-radius: 16px;
   }
 
   &__date {
-    margin-top:6px ;
+    margin-top: 6px;
     color: #4f4d4d;
   }
 
   &__title {
-    font-size: 32px ;
+    font-size: 32px;
   }
 
   &__description {
@@ -31,11 +32,9 @@
     color: gray;
   }
 
-
-  &__container:hover &__title{
+  &__container:hover &__title {
     text-decoration: underline;
   }
-
 
   &__container:visited &__title {
     color: #f88145;
