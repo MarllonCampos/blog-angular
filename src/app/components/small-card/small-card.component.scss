@@ -1,0 +1,45 @@
+.small-card {
+  display: flex;
+  gap: 24px;
+  position: relative;
+  margin-bottom: 36px;
+
+  &:hover &__title {
+    text-decoration: underline;
+  }
+
+  &:visited &__title {
+    color: #f88145;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 80%;
+    transform: translate(-50%, 0);
+    left: 50%;
+    margin: 0 auto;
+    height: 3px;
+    background-color: #222;
+    bottom: -18px;
+    border-radius: 999px;
+  }
+
+  &__photo {
+    width: 120px;
+  }
+
+  &__date {
+    color: #4f4d4d;
+    margin-bottom: 4px;
+  }
+
+  &__title {
+    font-weight: bold;
+  }
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+}

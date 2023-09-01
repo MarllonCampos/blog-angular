@@ -3,5 +3,10 @@
   <article class="articles__main">
     <app-big-card />
   </article>
-  <div class="articles__related"></div>
+  <div class="articles__related">
+    <app-small-card
+      *ngFor="let post of relatedPosts; let last = last"
+      [ngClass]="last ? 'last' : ''"
+    />
+  </div>
 </section>
