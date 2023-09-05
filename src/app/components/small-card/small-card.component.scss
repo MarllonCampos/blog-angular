@@ -7,6 +7,10 @@
     text-decoration: underline;
   }
 
+  &:hover &__image {
+    transform: skewY(-6deg);
+  }
+
   &:visited &__title {
     color: #f88145;
   }
@@ -42,6 +46,8 @@
     height: auto;
     aspect-ratio: 4/3;
     object-fit: cover;
+    border-radius: 6px;
+    transition: 0.3s ease-in-out;
     object-position: top left;
   }
 }
