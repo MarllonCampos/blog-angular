@@ -1,1 +1,17 @@
-<p>content works!</p>
+<div class="content">
+  <section class="content__cover">
+    <img [src]="photoCover" alt="" />
+  </section>
+  <section class="content__title">
+    <a [routerLink]="['']" class="content__goes-back"><- Voltar</a>
+
+    <h1>{{ title }}</h1>
+    <hr />
+  </section>
+
+  <ng-template [ngIf]="description">
+    <section class="content__description">
+      {{ description }}
+    </section>
+  </ng-template>
+</div>
