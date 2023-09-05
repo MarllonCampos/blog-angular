@@ -6,8 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./big-card.component.scss'],
 })
 export class BigCardComponent {
-  private pathToAssets: string = '../../../assets';
-
   @Input()
   photoCover: string = '';
 
@@ -20,4 +18,7 @@ export class BigCardComponent {
 
   @Input()
   cardDate: string = 'January 18, 2020';
+
+  @Input()
+  id: string = '4';
 }

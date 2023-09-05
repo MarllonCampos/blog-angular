@@ -1,5 +1,4 @@
 <main class="home-container">
-  <app-menu-bar />
   <app-title />
   <section class="articles">
     <article class="articles__main">
@@ -8,6 +7,7 @@
         [cardDescription]="bigCardInfo.description"
         [cardTitle]="bigCardInfo.title"
         [photoCover]="bigCardInfo.photoCover"
+        id="4"
       />
     </article>
     <div class="articles__related">
@@ -17,6 +17,7 @@
         [cardDate]="post.date"
         [cardTitle]="post.title"
         [photoCover]="post.photoCover"
+        [id]="post.id"
       />
     </div>
   </section>

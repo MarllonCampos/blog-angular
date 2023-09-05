@@ -1,4 +1,4 @@
-<a href="https://google.com" class="big-card__container">
+<a [routerLink]="['content', id]" class="big-card__container">
   <div>
     <img [src]="photoCover" alt="Placeholder image" class="big-card__image" />
     <p class="big-card__date">{{ cardDate }}</p>
