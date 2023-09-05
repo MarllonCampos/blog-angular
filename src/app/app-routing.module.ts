@@ -10,7 +10,8 @@ const routes: Routes = [
     title: 'Marllon Campos',
   },
   {
-    path: 'content',
+    path: 'content/:id',
+    title: 'Post Específico',
     component: ContentComponent,
   },
 ];
