@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-big-card',
@@ -7,5 +7,17 @@ import { Component } from '@angular/core';
 })
 export class BigCardComponent {
   private pathToAssets: string = '../../../assets';
-  octocat: string = `${this.pathToAssets}/octocat.png`;
+
+  @Input()
+  photoCover: string = '';
+
+  @Input()
+  cardTitle: string = 'ATENÇÃO!! A vida muda hoje: Saiu o filme da pantera';
+
+  @Input()
+  cardDescription: string =
+    'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel facere, architecto placeat aut pariatur dignissimos quo distinctio tempore sunt ea repellendus nobis quidem accusamus, explicabo necessitatibus dolorum quis commodi fugit.';
+
+  @Input()
+  cardDate: string = 'January 18, 2020';
 }

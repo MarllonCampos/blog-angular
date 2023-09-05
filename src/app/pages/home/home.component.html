@@ -3,7 +3,12 @@
   <app-title />
   <section class="articles">
     <article class="articles__main">
-      <app-big-card />
+      <app-big-card
+        [cardDate]="bigCardInfo.cardDate"
+        [cardDescription]="bigCardInfo.cardDescription"
+        [cardTitle]="bigCardInfo.cardTitle"
+        [photoCover]="bigCardInfo.photoCover"
+      />
     </article>
     <div class="articles__related">
       <app-small-card
