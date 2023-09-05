@@ -1,13 +1,9 @@
 <a href="https://google.com" class="small-card">
   <div class="small-card__photo">
-    <img
-      src="https://images.pexels.com/photos/2229887/pexels-photo-2229887.jpeg?auto=compress&cs=tinysrgb&w=1200"
-      alt="Placeholder image"
-      class="small-card__image"
-    />
+    <img [src]="photoCover" alt="Placeholder image" class="small-card__image" />
   </div>
   <div class="small-card__description">
-    <div class="small-card__date">January 01, 2020</div>
-    <div class="small-card__title">Noticia Quente! O mundo esfriou</div>
+    <div class="small-card__date">{{ cardDate }}</div>
+    <div class="small-card__title">{{ cardTitle }}</div>
   </div>
 </a>

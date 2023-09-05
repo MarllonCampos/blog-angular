@@ -4,9 +4,9 @@
   <section class="articles">
     <article class="articles__main">
       <app-big-card
-        [cardDate]="bigCardInfo.cardDate"
-        [cardDescription]="bigCardInfo.cardDescription"
-        [cardTitle]="bigCardInfo.cardTitle"
+        [cardDate]="bigCardInfo.date"
+        [cardDescription]="bigCardInfo.description"
+        [cardTitle]="bigCardInfo.title"
         [photoCover]="bigCardInfo.photoCover"
       />
     </article>
@@ -14,6 +14,9 @@
       <app-small-card
         *ngFor="let post of relatedPosts; let last = last"
         [ngClass]="last ? 'last' : ''"
+        [cardDate]="post.date"
+        [cardTitle]="post.title"
+        [photoCover]="post.photoCover"
       />
     </div>
   </section>
